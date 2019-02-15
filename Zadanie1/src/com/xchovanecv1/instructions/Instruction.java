@@ -38,8 +38,44 @@ public class Instruction {
             if(ops[0].contains("WRITE")) {
                 return new Write(line);
             }
+            if(ops[0].contains("NOP")) {
+                return new NOP(line);
+            }
+            if(ops[0].contains("JUMPF")) {
+                return new JumpIfFalse(line);
+            }
+            if(ops[0].contains("JUMPT")) {
+                return new JumpIfTrue(line);
+            }
+            if(ops[0].contains("JUMP")) {
+                return new Jump(line);
+            }
             if(ops[0].contains("+")) {
                 return new Sum(line);
+            }
+            if(ops[0].contains("-")) {
+                return new Diff(line);
+            }
+            if(ops[0].contains("*")) {
+                return new Multiply(line);
+            }
+            if(ops[0].contains("<=")) {
+                return new LessOrEqual(line);
+            }
+            if(ops[0].contains("<")) {
+                return new Less(line);
+            }
+            if(ops[0].contains(">=")) {
+                return new MoreOrEqual(line);
+            }
+            if(ops[0].contains(">")) {
+                return new More(line);
+            }
+            if(ops[0].contains("==")) {
+                return new Equals(line);
+            }
+            if(ops[0].contains("=")) {
+                return new Set(line);
             }
         }
         return new Instruction(line);

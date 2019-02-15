@@ -18,7 +18,7 @@ public class Runtime {
     public Runtime(String filename) {
         this.setInFile(filename);
         instructions = new ArrayList<Instruction>();
-        this.env = new Enviroment();
+        this.env = new Enviroment(this);
     }
 
     public void parseInputProgram() {
@@ -47,5 +47,9 @@ public class Runtime {
 
     public void setInFile(String inFile) {
         this.inFile = inFile;
+    }
+
+    public List<Instruction> getInstructions() {
+        return this.instructions;
     }
 }
