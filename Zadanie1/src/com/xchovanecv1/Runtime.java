@@ -1,5 +1,6 @@
 package com.xchovanecv1;
 
+import com.xchovanecv1.exceptions.InvalidInstrucrtion;
 import com.xchovanecv1.instructions.Instruction;
 
 import java.io.BufferedReader;
@@ -22,16 +23,20 @@ public class Runtime {
     }
 
     public void parseInputProgram() {
+        Integer ln = 1;
         try(BufferedReader br = new BufferedReader(new FileReader(getInFile()))) {
             for(String line; (line = br.readLine()) != null; ) {
                 Instruction bf = Instruction.createInstruction(line);
                 instructions.add(bf);
+                ln++;
             }
-            // line is not visible here.
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
+        } catch (InvalidInstrucrtion invalidInstrucrtion) {
+            System.out.println("[ERR Line:"+ln+"] Nerozpoznana instrukcia: "+ invalidInstrucrtion.getMessage());
+            env.HALT();
         }
     }
 

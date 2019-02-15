@@ -105,7 +105,11 @@ public class Enviroment {
     }
 
     public void error(String text) {
-        System.out.println("[ERR:"+(this.getSP())+"] "+ text);
+        System.out.println("[ERR Line:"+(this.getSP())+"] "+ text);
+        this.HALT();
+    }
+
+    public void HALT() {
         this.halt = true;
     }
 }

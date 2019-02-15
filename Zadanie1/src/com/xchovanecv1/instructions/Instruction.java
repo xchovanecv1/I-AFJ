@@ -1,6 +1,7 @@
 package com.xchovanecv1.instructions;
 
 import com.xchovanecv1.Enviroment;
+import com.xchovanecv1.exceptions.InvalidInstrucrtion;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -29,7 +30,7 @@ public class Instruction {
         env.moveSP(1);
     }
 
-    public static Instruction createInstruction(String line) {
+    public static Instruction createInstruction(String line) throws InvalidInstrucrtion{
         String[] ops = line.split(",");
         if(ops.length > 0) {
             if(ops[0].contains("READ")) {
@@ -78,6 +79,6 @@ public class Instruction {
                 return new Set(line);
             }
         }
-        return new Instruction(line);
+        throw new InvalidInstrucrtion(line);
     }
 }
