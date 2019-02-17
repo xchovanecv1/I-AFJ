@@ -25,8 +25,9 @@ public class Read extends Instruction{
             val = Integer.parseInt(s);
         } catch (IOException e) {
             e.printStackTrace();
+            env.HALT();
         } catch (NumberFormatException e) {
-            e.printStackTrace();
+            env.error("Zadana hodnota nema spravny format!");
         }
         env.var_SetOrCreate(var_name, val);
         //env.listVariables();
