@@ -5,4 +5,4 @@ JUMPT,podm,8
 *,faktorial,i,faktorial
 -,i,1,i
 JUMP,3
-WRITE,faktorial
+WRITE,faktorial

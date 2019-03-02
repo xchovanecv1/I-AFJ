@@ -15,6 +15,12 @@ public class Read extends Instruction{
     public void exec(Enviroment env) {
         super.exec(env);
         String var_name = this.ops.get(1);
+
+        if(!env.var_validName(var_name)) {
+            env.error("Hodnota "+var_name+" nie je vaidlne meno premennej!");
+            return;
+        }
+
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         System.out.print("Zadajte hodnotu premennej "+ var_name +": ");
 
