@@ -2,7 +2,6 @@ package com.xchovanecv1;
 
 import java.io.*;
 
-//TODO Prazdny riadok v kodovom subore, ignorovat / chybova hlaska
 public class Main {
 
     public static void main(String[] args) {
