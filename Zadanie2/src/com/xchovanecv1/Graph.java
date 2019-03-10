@@ -1,12 +1,9 @@
 package com.xchovanecv1;
 
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
 import java.util.*;
 
 public class Graph {
-
     State intial = null;
     HashMap<String, State> states = new HashMap<>();
     List<Character> abcd = new ArrayList<>();
@@ -102,8 +99,114 @@ public class Graph {
                 return false;
             }
         }
-
+        if(at == null) return false;
         return at.isAcceptable();
+    }
+
+    public void saveToFile(String name) throws IOException {
+        BufferedWriter writer = new BufferedWriter(new FileWriter(name));
+
+        writer.write(""+states.size()+"\n");
+        writer.write(""+abcd.size()+"\n");
+
+        for (Map.Entry<String, State> entry : states.entrySet())
+        {
+            writer.write(entry.getValue().formatFileLine()+"\n");
+        }
+        for (Character ch : abcd)
+        {
+            writer.write(ch.charValue()+"\n");
+        }
+        for (Map.Entry<String, State> entry : states.entrySet())
+        {
+            for (Map.Entry<Character, ArrayList<State>> state_con : entry.getValue().getNextState().entrySet())
+            {
+                String chr = state_con.getKey().toString();
+                if(state_con.getKey() == Character.MIN_VALUE) chr = "";
+                for(State s: state_con.getValue()) {
+
+                    writer.write(entry.getKey()+ ","+chr+","+s.getName()+"\n");
+                }
+            }
+        }
+        writer.close();
+    }
+
+    public static Set<State> eClosure(Set<State> in) {
+        TreeSet<State> ret = new TreeSet<>();
+        TreeSet<State> checked = new TreeSet<>();
+
+        Queue<State> check = new LinkedList<>();
+
+        ((LinkedList<State>) check).addAll(in);
+        // Povodne stavy su zahrntue
+        ret.addAll(in);
+        State st;
+
+        while((st = check.poll()) != null) {
+            checked.add(st);
+            List<State> toCheck = st.nextStates(Character.MIN_VALUE);
+            if(toCheck == null) continue;
+            for(State nw: toCheck) {
+                if(!checked.contains(nw)) {
+                    ret.add(nw);
+                    check.add(nw);
+                }
+            }
+        }
+
+        return ret;
+    }
+
+    public Graph convertToDFA() {
+
+        Graph fin = new Graph();
+        fin.setABCD(this.abcd);
+
+        List<Set<State>> states = new ArrayList<>();
+        Queue<Set<State>> check = new LinkedList<>();
+
+        Set<State> start= new TreeSet<>();
+        start.add(intial);
+        start = Graph.eClosure(start);
+        check.add(start);
+
+        State newInitial = State.concatState(start);
+        newInitial.setInitial(true);
+        fin.addState(newInitial);
+        fin.setIntial(newInitial);
+
+        states.add(start);
+        Set<State> st;
+
+        State woringState = null;
+        while((st = check.poll()) != null)
+        {
+            //states.add(st);
+            woringState = fin.getOrCreateState(st);
+
+            for(Character c: abcd) {
+                Set<State> ch_s = State.tranistStates(st, c);
+                ch_s = Graph.eClosure(ch_s);
+                if(ch_s == null || ch_s.isEmpty()) continue;
+                State newState = fin.getOrCreateState(ch_s);
+                System.out.println("Checkin: From:"+woringState.toString()+" ["+c+"] To:"+newState.toString());
+                if(!states.contains(ch_s)) {
+                    states.add(ch_s);
+                    check.add(ch_s);
+                }
+                woringState.addConnection(c, newState);
+            }
+        }
+        System.out.println("Final");
+        for(Set<State> stat : states) {
+            State.printStates(stat);
+        }
+        System.out.println("Final Automaton");
+
+        fin.representGraph();
+
+        return fin;
     }
 
     public static void error(String line, String reason) {
@@ -121,5 +224,33 @@ public class Graph {
         {
             entry.getValue().printConnections();
         }
+    }
+
+    public State getOrCreateState(Set<State> in) {
+        String stateName = State.concatStateName(in);
+        State ret;
+        if(states.containsKey(stateName)){
+            ret = states.get(stateName);
+        } else {
+            ret = State.concatState(in);
+            this.addState(ret);
+        }
+        return ret;
+    }
+
+    public void addState(State in) {
+        states.put(in.getName(), in);
+    }
+
+    public void setABCD(List<Character> in) {
+        this.abcd.addAll(in);
+    }
+
+    public State getIntial() {
+        return intial;
+    }
+
+    public void setIntial(State intial) {
+        this.intial = intial;
     }
 }
