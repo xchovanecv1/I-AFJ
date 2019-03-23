@@ -52,9 +52,11 @@ public class State implements Comparable<State>{
             for(State s : entry.getValue()) {
                 String state1 = " "+name+" ";
                 if(isAcceptable()) state1 = "[" + name+"]";
+                if(isInitial()) state1 += "[i]";
 
                 String state2 = " "+s.getName()+" ";
                 if(s.isAcceptable()) state2 = "[" + s.getName()+"]";
+                if(s.isInitial()) state2 += "[i]";
 
                 String chr = entry.getKey().toString();
                 if(entry.getKey() == Character.MIN_VALUE) chr = " ";
@@ -82,6 +84,15 @@ public class State implements Comparable<State>{
             ret.addAll(states);
         }
         return ret;
+    }
+
+    public State duplicate() {
+        State out = new State(this.name);
+
+        out.setAcceptable(this.acceptable);
+        out.setInitial(this.initial);
+
+        return out;
     }
 
     public State nextState(Character ch) {

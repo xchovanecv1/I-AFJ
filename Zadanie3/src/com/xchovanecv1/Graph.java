@@ -6,7 +6,21 @@ import java.util.*;
 public class Graph {
     State intial = null;
     HashMap<String, State> states = new HashMap<>();
-    List<Character> abcd = new ArrayList<>();
+    Set<Character> abcd = new HashSet<>();
+    int duplicated = 1;
+
+    public void normalizeNaming(String prefix) {
+        int count = 0;
+        HashMap<String, State> newStates = new HashMap<>();
+
+        for(HashMap.Entry<String, State> entry : states.entrySet()) {
+            String name = prefix+""+count;
+            entry.getValue().setName(name);
+            newStates.put(name, entry.getValue());
+            count++;
+        }
+        this.states = newStates;
+    }
 
     public void parseInputFile(String name) {
         int state_num   = 0;
@@ -83,6 +97,168 @@ public class Graph {
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
+
+    public Graph iteration() {
+        Graph out = this.duplicate();
+
+        State newInitial = new State(out.duplicated+"_"+out.getIntial().getName());
+        newInitial.setInitial(true);
+        newInitial.setAcceptable(true);
+
+        out.duplicated += 1;
+
+        for (Map.Entry<String, State> entry : out.states.entrySet()) {
+            if(entry.getValue().isAcceptable()) {
+                entry.getValue().addConnection(Character.MIN_VALUE, out.getIntial());
+            }
+        }
+        newInitial.addConnection(Character.MIN_VALUE, out.getIntial());
+        out.addState(newInitial);
+
+        out.getIntial().setInitial(false);
+        out.setIntial(newInitial);
+/*
+        State newInitial = new State(out.duplicated+"_"+out.getIntial().getName());
+        newInitial.setInitial(true);
+        out.duplicated += 1;
+
+        newInitial.addConnection(Character.MIN_VALUE, out.getIntial());
+        newInitial.addConnection(Character.MIN_VALUE, con.getIntial());
+
+        out.getIntial().setInitial(false);
+        con.getIntial().setInitial(false);
+
+        out.addState(newInitial);
+
+        out.setIntial(newInitial);
+*/
+        return out;
+    }
+
+    public Graph union(Graph state) {
+        Graph out = this.duplicate();
+        Graph con = state.duplicate(out.duplicated+"");
+        out.duplicated += 1;
+
+
+        out.abcd.addAll(con.abcd);
+        out.states.putAll(con.states);
+
+        State newInitial = new State(out.duplicated+"_"+out.getIntial().getName());
+        newInitial.setInitial(true);
+        out.duplicated += 1;
+
+        newInitial.addConnection(Character.MIN_VALUE, out.getIntial());
+        newInitial.addConnection(Character.MIN_VALUE, con.getIntial());
+
+        out.getIntial().setInitial(false);
+        con.getIntial().setInitial(false);
+
+        out.addState(newInitial);
+
+        out.setIntial(newInitial);
+
+        return out;
+    }
+
+    public Graph concatenation(Graph state) {
+        Graph out = this.duplicate();
+        Graph con = state.duplicate(out.duplicated+"");
+        out.duplicated += 1;
+
+        List<State> accStates = new ArrayList<>();
+        for (Map.Entry<String, State> entry : out.states.entrySet()) {
+            if(entry.getValue().isAcceptable()) {
+                accStates.add(entry.getValue());
+                entry.getValue().setAcceptable(false);
+            }
+        }
+
+        out.abcd.addAll(con.abcd);
+        out.states.putAll(con.states);
+
+        for (State st : accStates) {
+            st.addConnection(Character.MIN_VALUE, con.getIntial());
+        }
+
+        con.getIntial().setInitial(false);
+        con.setIntial(null);
+
+        return out;
+    }
+
+
+    public Graph duplicate() {
+        return this.duplicate("");
+    }
+    public Graph duplicate(String prefix) {
+        if(!prefix.isEmpty()) prefix = prefix + "_";
+        Graph out = new Graph();
+
+        out.setABCD(this.abcd);
+        out.duplicated = this.duplicated;
+
+        for (Map.Entry<String, State> entry : states.entrySet())
+        {
+            State st = entry.getValue().duplicate();
+            st.setName(prefix + st.getName());
+
+            if(this.intial == entry.getValue()) {
+                out.setIntial(st);
+            }
+            out.addState(st);
+        }
+
+        for (Map.Entry<String, State> entry : states.entrySet())
+        {
+            State bf = entry.getValue();
+            State newbf = out.getState(prefix + entry.getKey());
+
+            for (Map.Entry<Character, ArrayList<State>> cons : bf.getNextState().entrySet()) {
+                Character trans = cons.getKey();
+
+                for(State stat : cons.getValue()) {
+                    State conState = out.getState(prefix + stat.getName());
+
+                    newbf.addConnection(trans, conState);
+                }
+            }
+        }
+
+        return out;
+    }
+
+    public Graph() {
+
+    }
+
+    public static Graph createSingleton(Character in) {
+        Graph out = new Graph();
+        State initial = new State("q0");
+        initial.setInitial(true);
+
+        if(in == null) {
+            out.addState(initial);
+        } else {
+            if(in == Character.MIN_VALUE) {
+                initial.setAcceptable(true);
+            } else {
+                State fin = new State("qf");
+                out.addState(fin);
+                fin.setAcceptable(true);
+                initial.addConnection(in, fin);
+                out.abcd.add(in);
+            }
+            out.addState(initial);
+        }
+        out.setIntial(initial);
+
+        return out;
+    }
+
+    public State getState(String name) {
+        return states.getOrDefault(name, null);
     }
 
     public boolean run(String in) {
@@ -226,6 +402,13 @@ public class Graph {
         }
     }
 
+    public void representGraphStates() {
+        for (Map.Entry<String, State> entry : states.entrySet())
+        {
+            System.out.println(entry.getValue().toString());
+        }
+    }
+
     public State getOrCreateState(Set<State> in) {
         String stateName = State.concatStateName(in);
         State ret;
@@ -242,7 +425,7 @@ public class Graph {
         states.put(in.getName(), in);
     }
 
-    public void setABCD(List<Character> in) {
+    public void setABCD(Set<Character> in) {
         this.abcd.addAll(in);
     }
 

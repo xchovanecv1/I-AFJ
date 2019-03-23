@@ -7,7 +7,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a66f57b0-a060-4865-9d38-822e62002f52" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../Zadanie2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Zadanie2/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output4.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test4.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Zadanie3/com/xchovanecv1/Graph.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Zadanie3/com/xchovanecv1/Graph.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Zadanie3/com/xchovanecv1/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Zadanie3/com/xchovanecv1/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Zadanie3/com/xchovanecv1/State.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Zadanie3/com/xchovanecv1/State.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/xchovanecv1/Graph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/xchovanecv1/Graph.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/xchovanecv1/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/xchovanecv1/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/xchovanecv1/State.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/xchovanecv1/State.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,23 +38,59 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/test.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test4.txt">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/output4.txt">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/output.txt">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test3.txt">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/output3.txt">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/output2.txt">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test2.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="5" lean-forward="true" selection-end-line="4" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/xchovanecv1/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
-              <caret line="33" column="2" selection-start-line="33" selection-start-column="2" selection-end-line="33" selection-end-column="2" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/xchovanecv1/Graph.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="76" column="26" selection-start-line="76" selection-start-column="26" selection-end-line="76" selection-end-column="26" />
+            <state relative-caret-position="131">
+              <caret line="56" column="24" selection-start-line="56" selection-start-column="24" selection-end-line="56" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -49,10 +99,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/xchovanecv1/State.java">
+        <entry file="file://$PROJECT_DIR$/test1.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1513">
-              <caret line="91" column="44" selection-start-line="91" selection-start-column="44" selection-end-line="91" selection-end-column="44" />
+            <state relative-caret-position="34">
+              <caret line="2" column="5" lean-forward="true" selection-end-line="2" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -68,22 +118,36 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>set</find>
-      <find>var_exists</find>
-      <find>createInstruction</find>
-      <find>Enviroment</find>
-      <find>SetOr</find>
-      <find>var_validName</find>
-      <find>repre</find>
-      <find>print</find>
-      <find>Hash</find>
-      <find>Map</find>
       <find>Conver</find>
       <find>save</find>
       <find>run</find>
       <find>nextState</find>
       <find>Syste</find>
       <find>f</find>
+      <find>State(</find>
+      <find>createSin</find>
+      <find>represent</find>
+      <find>representGra</find>
+      <find>getIn</find>
+      <find>createSi</find>
+      <find>Hash</find>
+      <find>addState</find>
+      <find>dupli</find>
+      <find>duplo</find>
+      <find>conc</find>
+      <find>dupl</find>
+      <find>geto</find>
+      <find>conca</find>
+      <find>dup</find>
+      <find>represen</find>
+      <find>q1</find>
+      <find>I</find>
+      <find>con</find>
+      <find>2_2_q0</find>
+      <find>print</find>
+      <find>parse</find>
+      <find>abcd</find>
+      <find>setAB</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -116,18 +180,21 @@
         <option value="$PROJECT_DIR$/src/com/xchovanecv1/instructions/Read.java" />
         <option value="$PROJECT_DIR$/out/artifacts/Zadanie1_jar/test5.txt" />
         <option value="$PROJECT_DIR$/src/ytbTest.txt" />
-        <option value="$PROJECT_DIR$/src/com/xchovanecv1/State.java" />
-        <option value="$PROJECT_DIR$/src/com/xchovanecv1/Graph.java" />
-        <option value="$PROJECT_DIR$/test.txt" />
         <option value="$PROJECT_DIR$/output.txt" />
+        <option value="$PROJECT_DIR$/src/com/xchovanecv1/State.java" />
+        <option value="$PROJECT_DIR$/out.txt" />
+        <option value="$PROJECT_DIR$/src/com/xchovanecv1/Graph.java" />
         <option value="$PROJECT_DIR$/src/com/xchovanecv1/Main.java" />
+        <option value="$PROJECT_DIR$/test1.txt" />
+        <option value="$PROJECT_DIR$/test2.txt" />
+        <option value="$PROJECT_DIR$/test.txt" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-9" />
-    <option name="width" value="978" />
-    <option name="height" value="1039" />
+    <option name="x" value="-8" />
+    <option name="width" value="977" />
+    <option name="height" value="1038" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -167,7 +234,7 @@
     <property name="GenerateAntBuildDialog.outputFileNameProperty" value="zadanie2" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553354135781" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553380572570" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
@@ -176,6 +243,9 @@
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.xchovanecv1.instructions" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\GIT\AFJ\Zadanie3" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -194,7 +264,7 @@
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="com.xchovanecv1.Main" />
       <module name="Zadanie3" />
-      <option name="PROGRAM_PARAMETERS" value="E:\GIT\AFJ\Zadanie2\test.txt E:\GIT\AFJ\Zadanie2\output.txt" />
+      <option name="PROGRAM_PARAMETERS" value="E:\GIT\AFJ\Zadanie3\test.txt E:\GIT\AFJ\Zadanie3\output.txt" />
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
       <method v="2">
@@ -233,12 +303,12 @@
       <workItem from="1553204611580" duration="2188000" />
       <workItem from="1553291944256" duration="308000" />
       <workItem from="1553349827685" duration="1377000" />
-      <workItem from="1553353995671" duration="136000" />
+      <workItem from="1553353995671" duration="16289000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54256000" />
+    <option name="totallyTimeSpent" value="70409000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -266,8 +336,41 @@
       <window_info anchor="bottom" id="Database Changes" order="3" />
       <window_info anchor="bottom" id="Event Log" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="5" />
+      <window_info anchor="bottom" id="Find" order="6" weight="0.3286119" />
+      <window_info anchor="bottom" id="Run" order="7" visible="true" weight="0.25637394" />
+      <window_info anchor="bottom" id="Debug" order="8" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.3286119" />
+      <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
+      <window_info anchor="bottom" id="Duplicate detector" order="12" weight="0.3286119" />
+      <window_info anchor="bottom" id="TODO" order="13" weight="0.3286119" />
+      <window_info anchor="right" id="Theme Preview" order="0" />
+      <window_info anchor="right" id="Database" order="1" />
+      <window_info anchor="right" id="Capture Analysis" order="2" />
+      <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info anchor="right" id="Maven" order="4" />
+      <window_info anchor="right" id="Palette" order="5" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="6" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="7" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="8" weight="0.25" />
+      <window_info anchor="right" id="Coverage" order="9" side_tool="true" weight="0.3295302" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="Designer" order="0" />
+      <window_info id="UI Designer" order="1" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info id="Image Layers" order="4" />
+      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.118120804" />
+      <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="1" />
+      <window_info anchor="bottom" id="Terminal" order="2" weight="0.3286119" />
+      <window_info anchor="bottom" id="Database Changes" order="3" />
+      <window_info anchor="bottom" id="Event Log" order="4" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="5" />
       <window_info anchor="bottom" id="Find" order="6" />
-      <window_info anchor="bottom" id="Run" order="7" visible="true" weight="0.25070822" />
+      <window_info active="true" anchor="bottom" id="Run" order="7" visible="true" weight="0.25070822" />
       <window_info anchor="bottom" id="Debug" order="8" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.3286119" />
@@ -284,7 +387,7 @@
       <window_info anchor="right" id="Ant Build" order="7" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="8" weight="0.25" />
       <window_info anchor="right" id="Coverage" order="9" side_tool="true" weight="0.3295302" />
-    </layout>
+    </layout-to-restore>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Zadanie3.iml">
@@ -330,37 +433,96 @@
     <entry file="file://$PROJECT_DIR$/zadanie2.properties">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/output.txt" />
-    <entry file="file://$PROJECT_DIR$/test.txt" />
     <entry file="file://$USER_HOME$/AppData/Local/Temp/Temp1_Zadanie2_chovanec_80331.zip/Zadanie2/src/com/xchovanecv1/State.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2239" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/xchovanecv1/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/com/xchovanecv1/State.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="33" column="2" selection-start-line="33" selection-start-column="2" selection-end-line="33" selection-end-column="2" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="230">
+          <caret line="54" column="40" selection-start-line="54" selection-start-column="40" selection-end-line="54" selection-end-column="40" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/xchovanecv1/State.java">
+    <entry file="file://$PROJECT_DIR$/out.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1513">
-          <caret line="91" column="44" selection-start-line="91" selection-start-column="44" selection-end-line="91" selection-end-column="44" />
+        <state relative-caret-position="245">
+          <caret line="18" column="14" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/xchovanecv1/Graph.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="76" column="26" selection-start-line="76" selection-start-column="26" selection-end-line="76" selection-end-column="26" />
+        <state relative-caret-position="187">
+          <caret line="11" column="31" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#5546#5547#0" expanded="true" />
+            <element signature="e#5587#5588#0" expanded="true" />
+            <element signature="e#7437#7438#0" expanded="true" />
+            <element signature="e#7491#7492#0" expanded="true" />
+            <element signature="e#13322#13323#0" expanded="true" />
+            <element signature="e#13404#13405#0" expanded="true" />
+            <element signature="e#13465#13466#0" expanded="true" />
+            <element signature="e#13544#13545#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/output1.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/xchovanecv1/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="131">
+          <caret line="56" column="24" selection-start-line="56" selection-start-column="24" selection-end-line="56" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test1.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="5" lean-forward="true" selection-end-line="2" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/output2.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test2.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="5" lean-forward="true" selection-end-line="4" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/output.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test3.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/output3.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test4.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/output4.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
     </entry>
