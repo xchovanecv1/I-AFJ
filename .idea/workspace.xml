@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="59f3df64-6b9d-4312-a355-02bc088a6fa8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/AFJ.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Zadanie1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Zadanie1/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Zadanie1/out/artifacts/Zadanie1_jar/test5.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Zadanie1/out/artifacts/Zadanie1_jar/test5.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Zadanie2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Zadanie2/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,7 +18,7 @@
         <entry file="file://$PROJECT_DIR$/Zadanie1/src/com/xchovanecv1/Main.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="119">
-              <caret line="7" column="24" lean-forward="true" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
+              <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -44,6 +39,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -81,8 +78,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -133,16 +128,18 @@
       <workItem from="1550173246610" duration="81000" />
       <workItem from="1551540549914" duration="461000" />
       <workItem from="1551541045030" duration="701000" />
+      <workItem from="1552947618591" duration="15000" />
+      <workItem from="1553204602455" duration="6000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1243000" />
+    <option name="totallyTimeSpent" value="1264000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23154363" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23825504" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -178,7 +175,7 @@
     <entry file="file://$PROJECT_DIR$/Zadanie1/src/com/xchovanecv1/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
-          <caret line="7" column="24" lean-forward="true" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
+          <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
         </state>
       </provider>
     </entry>

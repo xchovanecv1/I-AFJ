@@ -11,7 +11,7 @@ public class Main {
 
         NKA.parseInputFile(args[0]);
 
-        NKA.representGraph();
+        //NKA.representGraph();
 
         Graph DKA = NKA.convertToDFA();
 

@@ -7,15 +7,43 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a66f57b0-a060-4865-9d38-822e62002f52" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/ytbTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Zadanie1_jar/Zadanie1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Zadanie1_jar/test5.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Zadanie1/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Zadanie1/com/xchovanecv1/Enviroment.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Zadanie1/com/xchovanecv1/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Zadanie1/com/xchovanecv1/Runtime.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Zadanie1/com/xchovanecv1/exceptions/InvalidInstrucrtion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Zadanie1/com/xchovanecv1/exceptions/InvalidNumericValue.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Zadanie1/com/xchovanecv1/exceptions/VariableNonExists.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Zadanie1/com/xchovanecv1/instructions/Diff.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Zadanie1/com/xchovanecv1/instructions/Equals.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Zadanie1/com/xchovanecv1/instructions/Instruction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Zadanie1/com/xchovanecv1/instructions/Jump.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Zadanie1/com/xchovanecv1/instructions/JumpIfFalse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Zadanie1/com/xchovanecv1/instructions/JumpIfTrue.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Zadanie1/com/xchovanecv1/instructions/Less.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Zadanie1/com/xchovanecv1/instructions/LessOrEqual.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Zadanie1/com/xchovanecv1/instructions/More.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Zadanie1/com/xchovanecv1/instructions/MoreOrEqual.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Zadanie1/com/xchovanecv1/instructions/Multiply.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Zadanie1/com/xchovanecv1/instructions/NOP.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Zadanie1/com/xchovanecv1/instructions/Read.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Zadanie1/com/xchovanecv1/instructions/Set.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Zadanie1/com/xchovanecv1/instructions/Sum.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Zadanie1/com/xchovanecv1/instructions/Write.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Zadanie2/com/xchovanecv1/Graph.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Zadanie2/com/xchovanecv1/Graph.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Zadanie2/com/xchovanecv1/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Zadanie2/com/xchovanecv1/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Zadanie2/com/xchovanecv1/State.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Zadanie2/com/xchovanecv1/State.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Zadanie2/ytbTest.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/xchovanecv1/Graph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/xchovanecv1/Graph.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/xchovanecv1/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/xchovanecv1/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/xchovanecv1/State.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/xchovanecv1/State.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.txt" beforeDir="false" afterPath="$PROJECT_DIR$/test.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ytbTest.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.txt" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -32,28 +60,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/xchovanecv1/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="239">
-              <caret line="17" column="29" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
+            <state relative-caret-position="289">
+              <caret line="20" column="36" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/output.txt">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/util/LinkedList.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15402">
-              <caret line="965" selection-start-line="965" selection-end-line="965" />
             </state>
           </provider>
         </entry>
@@ -61,33 +75,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/xchovanecv1/Graph.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="267">
-              <caret line="101" column="36" selection-start-line="101" selection-start-column="36" selection-end-line="101" selection-end-column="36" />
+            <state relative-caret-position="1275">
+              <caret line="76" column="26" selection-start-line="76" selection-start-column="26" selection-end-line="76" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#8116#8117#0" expanded="true" />
-                <element signature="e#8199#8200#0" expanded="true" />
-                <element signature="e#8260#8261#0" expanded="true" />
-                <element signature="e#8339#8340#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="37" column="9" selection-start-line="37" selection-start-column="9" selection-end-line="37" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ytbTest.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="4" selection-end-line="28" />
             </state>
           </provider>
         </entry>
@@ -95,23 +87,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/xchovanecv1/State.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="188">
-              <caret line="166" column="42" selection-start-line="166" selection-start-column="26" selection-end-line="166" selection-end-column="42" />
-              <folding>
-                <element signature="e#3648#3649#0" expanded="true" />
-                <element signature="e#3782#3783#0" expanded="true" />
-                <element signature="e#3852#3853#0" expanded="true" />
-                <element signature="e#3949#3950#0" expanded="true" />
-                <element signature="e#4013#4014#0" expanded="true" />
-                <element signature="e#4098#4099#0" expanded="true" />
-                <element signature="e#4156#4157#0" expanded="true" />
-                <element signature="e#4228#4229#0" expanded="true" />
-                <element signature="e#4299#4300#0" expanded="true" />
-                <element signature="e#4331#4332#0" expanded="true" />
-                <element signature="e#4407#4408#0" expanded="true" />
-                <element signature="e#4449#4450#0" expanded="true" />
-                <element signature="e#4546#4547#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="1513">
+              <caret line="91" column="44" selection-start-line="91" selection-start-column="44" selection-end-line="91" selection-end-column="44" />
             </state>
           </provider>
         </entry>
@@ -139,6 +116,10 @@
       <find>Map</find>
       <find>Conver</find>
       <find>save</find>
+      <find>run</find>
+      <find>nextState</find>
+      <find>Syste</find>
+      <find>f</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -172,15 +153,15 @@
         <option value="$PROJECT_DIR$/out/artifacts/Zadanie1_jar/test5.txt" />
         <option value="$PROJECT_DIR$/src/ytbTest.txt" />
         <option value="$PROJECT_DIR$/src/com/xchovanecv1/State.java" />
+        <option value="$PROJECT_DIR$/src/com/xchovanecv1/Main.java" />
         <option value="$PROJECT_DIR$/src/com/xchovanecv1/Graph.java" />
         <option value="$PROJECT_DIR$/test.txt" />
-        <option value="$PROJECT_DIR$/src/com/xchovanecv1/Main.java" />
         <option value="$PROJECT_DIR$/output.txt" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="952" />
+    <option name="x" value="-8" />
     <option name="width" value="977" />
     <option name="height" value="1038" />
   </component>
@@ -190,7 +171,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -201,23 +182,23 @@
             <path>
               <item name="Zadanie2" type="b2602c69:ProjectViewProjectNode" />
               <item name="Zadanie2" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="GenerateAntBuildDialog.backupFiles" value="true" />
     <property name="GenerateAntBuildDialog.enableUiFormCompile" value="true" />
     <property name="GenerateAntBuildDialog.forceTargetJdk" value="true" />
-    <property name="GenerateAntBuildDialog.outputFileNameProperty" value="zadanie1" />
+    <property name="GenerateAntBuildDialog.outputFileNameProperty" value="zadanie2" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552231797796" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553351205865" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
@@ -275,12 +256,19 @@
       <workItem from="1551816025826" duration="453000" />
       <workItem from="1552163657754" duration="8819000" />
       <workItem from="1552213419865" duration="5022000" />
-      <workItem from="1552225143896" duration="6376000" />
+      <workItem from="1552225143896" duration="6575000" />
+      <workItem from="1552232332591" duration="24000" />
+      <workItem from="1552947635724" duration="3436000" />
+      <workItem from="1553034989628" duration="14000" />
+      <workItem from="1553035078974" duration="11000" />
+      <workItem from="1553204611580" duration="2188000" />
+      <workItem from="1553291944256" duration="308000" />
+      <workItem from="1553349827685" duration="1377000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45769000" />
+    <option name="totallyTimeSpent" value="53326000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -300,7 +288,7 @@
       <window_info id="Capture Tool" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
-      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.13355705" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.11677852" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="1" />
@@ -309,7 +297,7 @@
       <window_info anchor="bottom" id="Event Log" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="5" />
       <window_info anchor="bottom" id="Find" order="6" />
-      <window_info active="true" anchor="bottom" id="Run" order="7" visible="true" weight="0.3286119" />
+      <window_info anchor="bottom" id="Run" order="7" visible="true" weight="0.25070822" />
       <window_info anchor="bottom" id="Debug" order="8" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.3286119" />
@@ -353,82 +341,65 @@
     <entry file="file://$PROJECT_DIR$/src/com/xchovanecv1/Enviroment.java" />
     <entry file="file://$PROJECT_DIR$/src/com/xchovanecv1/instructions/Instruction.java" />
     <entry file="file://$PROJECT_DIR$/src/com/xchovanecv1/instructions/Read.java" />
-    <entry file="file://$PROJECT_DIR$/out/artifacts/Zadanie1_jar/test5.txt">
+    <entry file="file://$PROJECT_DIR$/out/artifacts/Zadanie1_jar/test5.txt" />
+    <entry file="file://$PROJECT_DIR$/src/ytbTest.txt" />
+    <entry file="file://$PROJECT_DIR$/src/com/xchovanecv1/Graph.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/util/LinkedList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15402">
-          <caret line="965" selection-start-line="965" selection-end-line="965" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ytbTest.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="4" selection-end-line="28" />
+        <state relative-caret-position="1275">
+          <caret line="76" column="26" selection-start-line="76" selection-start-column="26" selection-end-line="76" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/xchovanecv1/State.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="166" column="42" selection-start-line="166" selection-start-column="26" selection-end-line="166" selection-end-column="42" />
-          <folding>
-            <element signature="e#3648#3649#0" expanded="true" />
-            <element signature="e#3782#3783#0" expanded="true" />
-            <element signature="e#3852#3853#0" expanded="true" />
-            <element signature="e#3949#3950#0" expanded="true" />
-            <element signature="e#4013#4014#0" expanded="true" />
-            <element signature="e#4098#4099#0" expanded="true" />
-            <element signature="e#4156#4157#0" expanded="true" />
-            <element signature="e#4228#4229#0" expanded="true" />
-            <element signature="e#4299#4300#0" expanded="true" />
-            <element signature="e#4331#4332#0" expanded="true" />
-            <element signature="e#4407#4408#0" expanded="true" />
-            <element signature="e#4449#4450#0" expanded="true" />
-            <element signature="e#4546#4547#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="1513">
+          <caret line="91" column="44" selection-start-line="91" selection-start-column="44" selection-end-line="91" selection-end-column="44" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/xchovanecv1/Graph.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/util/LinkedList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="101" column="36" selection-start-line="101" selection-start-column="36" selection-end-line="101" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#8116#8117#0" expanded="true" />
-            <element signature="e#8199#8200#0" expanded="true" />
-            <element signature="e#8260#8261#0" expanded="true" />
-            <element signature="e#8339#8340#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="2232">
+          <caret line="965" selection-start-line="965" selection-end-line="965" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module_zadanie2.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="38" lean-forward="true" selection-start-column="38" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zadanie2.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/output.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="7" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="37" column="9" selection-start-line="37" selection-start-column="9" selection-end-line="37" selection-end-column="9" />
+        <state relative-caret-position="470">
+          <caret line="29" column="7" selection-start-line="29" selection-start-column="7" selection-end-line="29" selection-end-column="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/xchovanecv1/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
-          <caret line="17" column="29" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
+        <state relative-caret-position="289">
+          <caret line="20" column="36" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/output.txt">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
   <component name="masterDetails">

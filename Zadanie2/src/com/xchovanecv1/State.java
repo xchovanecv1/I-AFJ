@@ -90,7 +90,6 @@ public class State implements Comparable<State>{
 
         Random random = new Random(System.currentTimeMillis());
         int rnd = random.nextInt(bf.size());
-        System.out.println("Rnd pos: "+rnd);
 
         return bf.get(rnd);
     }

@@ -30,7 +30,7 @@ public class Graph {
                         State state_bf = State.parseStateLine(line);
                         if(state_bf != null)
                         {
-                            System.out.println(state_bf);
+                            //System.out.println(state_bf);
                             states.put(state_bf.getName(), state_bf);
                             if(state_bf.isInitial()) {
                                 this.intial = state_bf;
@@ -74,7 +74,7 @@ public class Graph {
                             this.error(line, "Neplatny format hrany");
                             break;
                         }
-                        System.out.println(line);
+                        //System.out.println(line);
                     }
                 }
                 ln_num++;
@@ -91,7 +91,7 @@ public class Graph {
         for(int i=0; i < in.length(); i++) {
             Character c = in.charAt(i);
             if(at == null) return false;
-            System.out.println(at.getName()+" - "+ c);
+
             if(abcd.contains(c)) {
                 at = at.nextState(c);
             } else {
@@ -190,7 +190,7 @@ public class Graph {
                 ch_s = Graph.eClosure(ch_s);
                 if(ch_s == null || ch_s.isEmpty()) continue;
                 State newState = fin.getOrCreateState(ch_s);
-                System.out.println("Checkin: From:"+woringState.toString()+" ["+c+"] To:"+newState.toString());
+                //System.out.println("Checkin: From:"+woringState.toString()+" ["+c+"] To:"+newState.toString());
                 if(!states.contains(ch_s)) {
                     states.add(ch_s);
                     check.add(ch_s);
@@ -198,14 +198,14 @@ public class Graph {
                 woringState.addConnection(c, newState);
             }
         }
-        System.out.println("Final");
+        /*System.out.println("Final");
         for(Set<State> stat : states) {
             State.printStates(stat);
         }
         System.out.println("Final Automaton");
 
         fin.representGraph();
-
+*/
         return fin;
     }
 
