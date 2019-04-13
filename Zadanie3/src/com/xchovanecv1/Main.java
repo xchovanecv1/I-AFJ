@@ -41,7 +41,6 @@ public class Main {
                         graphs.add(fin);
                     }
                 }
-                System.out.println(parts.length);
             }
         } catch (IOException e) {
             e.printStackTrace();
@@ -49,12 +48,16 @@ public class Main {
         graphs.get(0).representGraph();
         Graph NKA = graphs.get(graphs.size()-1);
 
+        NKA.normalizeNaming("n");
+        NKA.saveToFile(args[1]);
+
         Graph dka = NKA.convertToDFA();
+        dka.representGraph();
         dka.normalizeNaming("q");
 
         System.out.println("-------------------");
         dka.representGraph();
-        dka.saveToFile("output.txt");
+        dka.saveToFile(args[2]);
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         System.out.print("Zadajte vstupnu hodnotu pre automat: ");
         String s = null;
@@ -69,30 +72,5 @@ public class Main {
         } catch (IOException e) {
             e.printStackTrace();
         }
-
-/*
-        NKA.parseInputFile(args[0]);
-
-        //NKA.representGraph();
-
-        Graph DKA = NKA.convertToDFA();
-
-        DKA.saveToFile(args[1]);
-
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        System.out.print("Zadajte vstupnu hodnotu pre automat: ");
-        String s = null;
-        try {
-            s = br.readLine();
-            boolean out = DKA.run(s);
-            if(out) {
-                System.out.println("Automat slovo "+s+" AKCEPTUJE!");
-            } else {
-                System.out.println("Automat slovo "+s+" NEAKCEPTUJE!");
-            }
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-*/
     }
 }
