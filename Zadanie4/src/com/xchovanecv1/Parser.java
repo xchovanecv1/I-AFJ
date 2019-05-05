@@ -27,15 +27,12 @@ public class Parser {
 
     public String tokenize(String regex) {
         String input = regex;
-        System.out.println("Input regex: "+input);
         int occr;
         while((occr = input.indexOf('(')) != -1) {
             int end = findCounterpart(input, occr+1);
-            //System.out.println("From" + input +" Occured  " + occr + " End: " + end);
             if(end != -1) {
                 String cont = input.substring(occr+1, end);
                 String tokenN = "#"+tokenMap.size()+"#";
-                System.out.println(occr);
                 toCheck.add(tokenN);
                 tokenMap.put(tokenN, cont);
                 String prefix = "";
@@ -48,8 +45,6 @@ public class Parser {
                     sufix = input.substring(end+1);
                 }
                 input = prefix + tokenN + sufix;
-                System.out.println("Prefix " + prefix + " Sufix: "+ sufix + " Final: " + input);
-
             } else {
                 System.err.println("Chybne ozatvorkovanie");
                 break;
@@ -79,14 +74,11 @@ public class Parser {
 
         Queue<Graph> union = new LinkedList<Graph>();
         String proccessText = input;
-        System.out.println("Cicky " + proccessText);
         if(proccessText.length() > 0) {
-            System.out.println("tu");
             String[] parts = proccessText.split("\\|");
             boolean iterationHanging = false;
             for(int p = (parts.length-1); p >=0; p--) {
                 Queue<Graph> Q = new LinkedList<Graph>();
-                System.err.println("Checkin "+p+ " Len" + (parts[p].length()-1));
                 int pos = parts[p].length()-1;
                 for(int i=pos; i >=0; i--) {
                     char harakter = parts[p].charAt(i);
@@ -94,20 +86,13 @@ public class Parser {
                     if(harakter == '#') {
                         int start = findEndTokenReverse(parts[p], i);
                         String tokenName = parts[p].substring(start, i+1);
-                        System.out.println(tokenName);
                         i = start;
-                        System.out.println("Titis "+ tokenName);
                         actual = process(tokenMap.get(tokenName));
                     } else if(isHarakter(harakter)) {
                         actual = Graph.createSingleton(harakter);
                     } else if(harakter == '*') {
-                        System.err.println("Iteratin");
                         iterationHanging = true;
                         continue;
-                        /*
-                        Graph toIterate = Q.poll();
-                        toIterate.representGraph();
-                        actual = toIterate.iteration();*/
                     }
                     if(iterationHanging) {
                         actual.representGraph();
@@ -120,18 +105,15 @@ public class Parser {
                     } else {
                         Q.add(actual);
                     }
-                    System.err.println(proccessText.charAt(i));
                 }
                 union.add(Q.poll());
             }
         }
-        System.err.println("Union to " + union.size());
         Graph ret = union.poll();
         Graph toUnion;
         while((toUnion = union.poll()) != null) {
             ret = ret.union(toUnion);
         }
-        ret.representGraph();
         return ret;
     }
 
@@ -142,19 +124,9 @@ public class Parser {
         if(toCheck.size() > 0) {
             String tokenKey;
             while((tokenKey = toCheck.poll()) != null){
-                System.out.println("Inside");
-                System.out.println(tokenKey);
-                System.out.println(tokenMap.get(tokenKey));
                 String newVal = tokenize(tokenMap.get(tokenKey));
-                System.out.println(newVal);
                 tokenMap.put(tokenKey, newVal);
             }
-        }
-
-        System.out.println("Zaciname: " + baseInput);
-
-        for (Map.Entry<String, String> entry : tokenMap.entrySet()) {
-            System.out.println(entry.getKey() + " -> " + entry.getValue());
         }
     }
 
