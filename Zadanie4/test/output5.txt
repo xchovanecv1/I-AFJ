@@ -1,0 +1,21 @@
+6
+3
+q1 F
+q2
+q3
+q4 I
+q5
+q0
+a
+b
+c
+q2,a,q0
+q2,b,q1
+q2,c,q3
+q3,b,q5
+q4,a,q2
+q4,b,q1
+q5,a,q2
+q5,b,q1
+q0,a,q0
+q0,b,q1

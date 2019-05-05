@@ -1,0 +1,17 @@
+6
+2
+q1
+q2 F
+q3 I
+q4 F
+q5 F
+q0
+a
+b
+q1,a,q1
+q1,b,q4
+q2,b,q2
+q3,a,q0
+q5,b,q2
+q0,a,q1
+q0,b,q5

@@ -1,0 +1,14 @@
+4
+3
+q1 F
+q2
+q3
+q0 I
+a
+b
+c
+q2,b,q3
+q2,c,q1
+q3,a,q2
+q0,b,q3
+q0,c,q1
